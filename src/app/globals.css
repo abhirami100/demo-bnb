@@ -1,26 +1,188 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ───────────────────────── Design tokens ─────────────────────────
+   Paper + ink editorial base, BnB indigo (sampled from the logo) as the brand
+   colour, one warm "marker" accent used sparingly. */
+@theme {
+  --color-paper: #f3f0e9;
+  --color-paper-2: #e9e5db;
+  --color-card: #fbfaf7;
+  --color-ink: #121318;
+  --color-ink-soft: #4b4c57;
+  --color-ink-mute: #8a8a94;
+  --color-line: rgb(18 19 24 / 0.12);
+  --color-indigo: #2b3194;
+  --color-indigo-bright: #3d44c9;
+  --color-indigo-deep: #12154d;
+  --color-marker: #ff5b36;
+  --color-sun: #f4d23c;
+
+  /* home-2 playful block palette */
+  --color-mist: #efefec;
+  --color-sky: #bfe0f2;
+  --color-sage: #a9c3a6;
+  --color-lime: #cdf05c;
+  --color-coral: #ff8c66;
+  --color-apricot: #f6b979;
+
+  --font-sans: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --text-display: clamp(3rem, 7.8vw, 8.25rem);
+  --text-display--line-height: 0.9;
+  --text-display--letter-spacing: -0.045em;
+  --text-h1: clamp(2.5rem, 6vw, 6rem);
+  --text-h1--line-height: 0.95;
+  --text-h1--letter-spacing: -0.04em;
+  --text-h2: clamp(2rem, 4.2vw, 4rem);
+  --text-h2--line-height: 1;
+  --text-h2--letter-spacing: -0.035em;
+  --text-h3: clamp(1.4rem, 2.2vw, 2rem);
+  --text-h3--line-height: 1.1;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.05rem, 1.35vw, 1.3rem);
+  --text-lead--line-height: 1.55;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --breakpoint-xs: 26rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-indigo);
+    color: var(--color-paper);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-indigo-bright);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container-x {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 96rem;
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
+  }
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .serif-accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  /* Product shots are white-background studio photos: multiply lets them sit on paper. */
+  .on-paper {
+    mix-blend-mode: multiply;
+  }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .split-line {
+    overflow: clip;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+  /* home-2: fine graph paper */
+  .graph-paper {
+    background-color: var(--color-mist);
+    background-image:
+      linear-gradient(rgb(18 19 24 / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(18 19 24 / 0.045) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  /* home-2: morphing mosaic cell */
+  .morph {
+    transition:
+      clip-path 0.9s var(--ease-out-expo),
+      border-radius 0.9s var(--ease-out-expo),
+      background-color 0.9s var(--ease-out-expo),
+      transform 0.9s var(--ease-out-expo);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+/* ───── 2D stationery motion (replaces the WebGL scenes) ───── */
+@keyframes piece-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -26vh, 0) rotate(var(--spin, 25deg)) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes piece-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, var(--fy, -10px), 0) rotate(var(--fr, 2deg));
+  }
+}
+.piece-in {
+  animation: piece-in 1.6s var(--ease-out-expo) both;
+  animation-delay: var(--d, 0s);
+}
+.piece-float {
+  animation: piece-float var(--fd, 6s) ease-in-out infinite;
+  animation-delay: var(--fdl, 0s);
+  will-change: transform;
+}
+[data-paused] .piece-float {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }

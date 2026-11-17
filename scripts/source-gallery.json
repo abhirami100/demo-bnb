@@ -1,0 +1,866 @@
+{
+  "tabs": [
+    {
+      "id": "tab1",
+      "galleryproduct": "Camlin",
+      "images": [
+        { "url": "/src/assets/gallery/camlin1.webp" },
+        { "url": "/src/assets/gallery/camlin2.webp" },
+        { "url": "/src/assets/gallery/camlin3.webp" },
+        { "url": "/src/assets/gallery/camlin4.webp" },
+        { "url": "/src/assets/gallery/camlin5.webp" },
+        { "url": "/src/assets/gallery/camlin6.webp" },
+        { "url": "/src/assets/gallery/camlin7.webp" },
+        { "url": "/src/assets/gallery/camlin8.webp" },
+        { "url": "/src/assets/gallery/camlin9.webp" },
+        { "url": "/src/assets/gallery/camlin10.webp" },
+        { "url": "/src/assets/gallery/camlin11.webp" },
+        { "url": "/src/assets/gallery/camlin12.webp" },
+        { "url": "/src/assets/gallery/camlin13.webp" },
+        { "url": "/src/assets/gallery/camlin14.webp" },
+        { "url": "/src/assets/gallery/camlin15.webp" },
+        { "url": "/src/assets/gallery/camlin16.webp" },
+        { "url": "/src/assets/gallery/camlin17.webp" },
+        { "url": "/src/assets/gallery/camlin18.webp" },
+        { "url": "/src/assets/gallery/camlin19.webp" },
+        { "url": "/src/assets/gallery/camlin20.webp" },
+        { "url": "/src/assets/gallery/camlin21.webp" },
+        { "url": "/src/assets/gallery/camlin22.webp" },
+        { "url": "/src/assets/gallery/camlin23.webp" },
+        { "url": "/src/assets/gallery/camlin24.webp" },
+        { "url": "/src/assets/gallery/camlin25.webp" },
+        { "url": "/src/assets/gallery/camlin26.webp" },
+        { "url": "/src/assets/gallery/camlin27.webp" },
+        { "url": "/src/assets/gallery/camlin28.webp" },
+        { "url": "/src/assets/gallery/camlin29.webp" },
+        { "url": "/src/assets/gallery/camlin30.webp" },
+        { "url": "/src/assets/gallery/camlin31.webp" },
+        { "url": "/src/assets/gallery/camlin32.webp" },
+        { "url": "/src/assets/gallery/camlin33.webp" },
+        { "url": "/src/assets/gallery/camlin34.webp" },
+        { "url": "/src/assets/gallery/camlin35.webp" },
+        { "url": "/src/assets/gallery/camlin36.webp" },
+        { "url": "/src/assets/gallery/camlin37.webp" },
+        { "url": "/src/assets/gallery/camlin38.webp" },
+        { "url": "/src/assets/gallery/camlin39.webp" },
+        { "url": "/src/assets/gallery/camlin40.webp" },
+        { "url": "/src/assets/gallery/camlin41.webp" },
+        { "url": "/src/assets/gallery/camlin42.webp" },
+        { "url": "/src/assets/gallery/camlin43.webp" },
+        { "url": "/src/assets/gallery/camlin44.webp" },
+        { "url": "/src/assets/gallery/camlin45.webp" },
+        { "url": "/src/assets/gallery/camlin46.webp" },
+        { "url": "/src/assets/gallery/camlin47.webp" },
+        { "url": "/src/assets/gallery/camlin48.webp" },
+        { "url": "/src/assets/gallery/camlin49.webp" },
+        { "url": "/src/assets/gallery/camlin50.webp" },
+        { "url": "/src/assets/gallery/camlin51.webp" },
+        { "url": "/src/assets/gallery/camlin52.webp" },
+        { "url": "/src/assets/gallery/camlin53.webp" },
+        { "url": "/src/assets/gallery/camlin54.webp" },
+        { "url": "/src/assets/gallery/camlin55.webp" },
+        { "url": "/src/assets/gallery/camlin56.webp" },
+        { "url": "/src/assets/gallery/camlin57.webp" },
+        { "url": "/src/assets/gallery/camlin58.webp" },
+        { "url": "/src/assets/gallery/camlin59.webp" },
+        { "url": "/src/assets/gallery/camlin60.webp" },
+        { "url": "/src/assets/gallery/camlin61.webp" },
+        { "url": "/src/assets/gallery/camlin62.webp" },
+        { "url": "/src/assets/gallery/camlin63.webp" },
+        { "url": "/src/assets/gallery/camlin64.webp" },
+        { "url": "/src/assets/gallery/camlin65.webp" },
+        { "url": "/src/assets/gallery/camlin66.webp" },
+        { "url": "/src/assets/gallery/camlin67.webp" },
+        { "url": "/src/assets/gallery/camlin68.webp" },
+        { "url": "/src/assets/gallery/camlin69.webp" },
+        { "url": "/src/assets/gallery/camlin70.webp" },
+        { "url": "/src/assets/gallery/camlin71.webp" },
+        { "url": "/src/assets/gallery/camlin72.webp" },
+        { "url": "/src/assets/gallery/camlin73.webp" },
+        { "url": "/src/assets/gallery/camlin74.webp" },
+        { "url": "/src/assets/gallery/camlin75.webp" },
+        { "url": "/src/assets/gallery/camlin76.webp" },
+        { "url": "/src/assets/gallery/camlin77.webp" },
+        { "url": "/src/assets/gallery/camlin78.webp" },
+        { "url": "/src/assets/gallery/camlin79.webp" },
+        { "url": "/src/assets/gallery/camlin80.webp" },
+        { "url": "/src/assets/gallery/camlin81.webp" },
+        { "url": "/src/assets/gallery/camlin82.webp" },
+        { "url": "/src/assets/gallery/camlin83.webp" },
+        { "url": "/src/assets/gallery/camlin84.webp" },
+        { "url": "/src/assets/gallery/camlin85.webp" },
+        { "url": "/src/assets/gallery/camlin86.webp" },
+        { "url": "/src/assets/gallery/camlin87.webp" },
+        { "url": "/src/assets/gallery/camlin88.webp" },
+        { "url": "/src/assets/gallery/camlin89.webp" },
+        { "url": "/src/assets/gallery/camlin90.webp" },
+        { "url": "/src/assets/gallery/camlin91.webp" },
+        { "url": "/src/assets/gallery/camlin92.webp" },
+        { "url": "/src/assets/gallery/camlin93.webp" },
+        { "url": "/src/assets/gallery/camlin94.webp" },
+        { "url": "/src/assets/gallery/camlin95.webp" },
+        { "url": "/src/assets/gallery/camlin96.webp" },
+        { "url": "/src/assets/gallery/camlin97.webp" },
+        { "url": "/src/assets/gallery/camlin98.webp" },
+        { "url": "/src/assets/gallery/camlin99.webp" },
+        { "url": "/src/assets/gallery/camlin100.webp" },
+        { "url": "/src/assets/gallery/camlin101.webp" },
+        { "url": "/src/assets/gallery/camlin102.webp" },
+        { "url": "/src/assets/gallery/camlin103.webp" },
+        { "url": "/src/assets/gallery/camlin104.webp" },
+        { "url": "/src/assets/gallery/camlin105.webp" },
+        { "url": "/src/assets/gallery/camlin106.webp" },
+        { "url": "/src/assets/gallery/camlin107.webp" },
+        { "url": "/src/assets/gallery/camlin108.webp" },
+        { "url": "/src/assets/gallery/camlin109.webp" },
+        { "url": "/src/assets/gallery/camlin110.webp" },
+        { "url": "/src/assets/gallery/camlin111.webp" },
+        { "url": "/src/assets/gallery/camlin112.webp" },
+        { "url": "/src/assets/gallery/camlin113.webp" },
+        { "url": "/src/assets/gallery/camlin114.webp" },
+        { "url": "/src/assets/gallery/camlin115.webp" },
+        { "url": "/src/assets/gallery/camlin116.webp" },
+        { "url": "/src/assets/gallery/camlin117.webp" },
+        { "url": "/src/assets/gallery/camlin118.webp" },
+        { "url": "/src/assets/gallery/camlin119.webp" },
+        { "url": "/src/assets/gallery/camlin120.webp" },
+        { "url": "/src/assets/gallery/camlin121.webp" },
+        { "url": "/src/assets/gallery/camlin122.webp" },
+        { "url": "/src/assets/gallery/camlin123.webp" },
+        { "url": "/src/assets/gallery/camlin124.webp" },
+        { "url": "/src/assets/gallery/camlin125.webp" },
+        { "url": "/src/assets/gallery/camlin126.webp" },
+        { "url": "/src/assets/gallery/camlin127.webp" },
+        { "url": "/src/assets/gallery/camlin128.webp" },
+        { "url": "/src/assets/gallery/camlin129.webp" },
+        { "url": "/src/assets/gallery/camlin130.webp" },
+        { "url": "/src/assets/gallery/camlin131.webp" },
+        { "url": "/src/assets/gallery/camlin132.webp" },
+        { "url": "/src/assets/gallery/camlin133.webp" },
+        { "url": "/src/assets/gallery/camlin134.webp" },
+        { "url": "/src/assets/gallery/camlin135.webp" },
+        { "url": "/src/assets/gallery/camlin136.webp" },
+        { "url": "/src/assets/gallery/camlin137.webp" },
+        { "url": "/src/assets/gallery/camlin138.webp" },
+        { "url": "/src/assets/gallery/camlin139.webp" },
+        { "url": "/src/assets/gallery/camlin140.webp" },
+        { "url": "/src/assets/gallery/camlin141.webp" },
+        { "url": "/src/assets/gallery/camlin142.webp" },
+        { "url": "/src/assets/gallery/camlin143.webp" },
+        { "url": "/src/assets/gallery/camlin144.webp" },
+        { "url": "/src/assets/gallery/camlin145.webp" },
+        { "url": "/src/assets/gallery/camlin146.webp" },
+        { "url": "/src/assets/gallery/camlin147.webp" },
+        { "url": "/src/assets/gallery/camlin148.webp" },
+        { "url": "/src/assets/gallery/camlin149.webp" },
+        { "url": "/src/assets/gallery/camlin150.webp" },
+        { "url": "/src/assets/gallery/camlin151.webp" },
+        { "url": "/src/assets/gallery/camlin152.webp" },
+        { "url": "/src/assets/gallery/camlin153.webp" },
+        { "url": "/src/assets/gallery/camlin154.webp" },
+        { "url": "/src/assets/gallery/camlin155.webp" },
+        { "url": "/src/assets/gallery/camlin156.webp" },
+        { "url": "/src/assets/gallery/camlin157.webp" },
+        { "url": "/src/assets/gallery/camlin158.webp" },
+        { "url": "/src/assets/gallery/camlin159.webp" },
+        { "url": "/src/assets/gallery/camlin160.webp" },
+        { "url": "/src/assets/gallery/camlin161.webp" },
+        { "url": "/src/assets/gallery/camlin162.webp" },
+        { "url": "/src/assets/gallery/camlin163.webp" },
+        { "url": "/src/assets/gallery/camlin164.webp" },
+        { "url": "/src/assets/gallery/camlin165.webp" },
+        { "url": "/src/assets/gallery/camlin166.webp" },
+        { "url": "/src/assets/gallery/camlin167.webp" },
+        { "url": "/src/assets/gallery/camlin168.webp" },
+        { "url": "/src/assets/gallery/camlin169.webp" },
+        { "url": "/src/assets/gallery/camlin170.webp" },
+        { "url": "/src/assets/gallery/camlin171.webp" },
+        { "url": "/src/assets/gallery/camlin172.webp" }
+      ]
+    },
+    {
+      "id": "tab2",
+      "galleryproduct": "Flexoffice",
+      "images": [
+        {
+          "url": "/src/assets/gallery/flexoffice1.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice2.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice3.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice4.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice5.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice6.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice7.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice8.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice9.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice10.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice11.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice12.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice13.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice14.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice15.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice16.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice17.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice18.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice19.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice20.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice21.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice22.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice23.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice24.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice25.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice26.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice27.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice28.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice29.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice30.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice31.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice32.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice33.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice34.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice35.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice36.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice37.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice38.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice39.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice40.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice41.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice42.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice43.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice44.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice45.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice46.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice47.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice48.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice49.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice50.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice51.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice52.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice53.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice54.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice55.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice56.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice57.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice58.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice59.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice60.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice61.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice62.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice63.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice64.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice65.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice66.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice67.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice68.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice69.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice70.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice71.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice72.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice73.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice74.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice75.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice76.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice77.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice78.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice79.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice80.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice81.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice82.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice83.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice84.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice84.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice85.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice86.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice87.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice88.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice89.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice90.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice91.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice92.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice93.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice94.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice95.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice96.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice97.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice98.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice99.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice100.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice101.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice102.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice103.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice104.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice105.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice106.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice107.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice108.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice109.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice110.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice111.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice112.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice113.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice114.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice115.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice116.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice117.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice118.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice119.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice120.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice121.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice122.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice123.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice124.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice125.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice126.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice127.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice128.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice129.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice130.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice131.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice132.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice133.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice134.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice135.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice136.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice137.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice138.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice139.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice140.webp"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice149.jpeg"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice143.jpeg"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice144.jpeg"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice145.jpeg"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice146.jpeg"
+        },
+        {
+          "url": "/src/assets/gallery/flexoffice147.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "tab3",
+      "galleryproduct": "Pelikan",
+      "images": [
+        { "url": "/src/assets/gallery/pelikan1.webp" },
+        { "url": "/src/assets/gallery/pelikan2.webp" },
+        { "url": "/src/assets/gallery/pelikan3.webp" },
+        { "url": "/src/assets/gallery/pelikan4.webp" },
+        { "url": "/src/assets/gallery/pelikan5.webp" },
+        { "url": "/src/assets/gallery/pelikan6.webp" },
+        { "url": "/src/assets/gallery/pelikan7.webp" },
+        { "url": "/src/assets/gallery/pelikan8.webp" },
+        { "url": "/src/assets/gallery/pelikan9.webp" },
+        { "url": "/src/assets/gallery/pelikan10.webp" },
+        { "url": "/src/assets/gallery/pelikan11.webp" },
+        { "url": "/src/assets/gallery/pelikan12.webp" },
+        { "url": "/src/assets/gallery/pelikan13.webp" },
+        { "url": "/src/assets/gallery/pelikan14.webp" },
+        { "url": "/src/assets/gallery/pelikan15.webp" },
+        { "url": "/src/assets/gallery/pelikan16.webp" },
+        { "url": "/src/assets/gallery/pelikan17.webp" },
+        { "url": "/src/assets/gallery/pelikan18.webp" },
+        { "url": "/src/assets/gallery/pelikan19.webp" },
+        { "url": "/src/assets/gallery/pelikan20.webp" },
+        { "url": "/src/assets/gallery/pelikan21.webp" },
+        { "url": "/src/assets/gallery/pelikan22.webp" },
+        { "url": "/src/assets/gallery/pelikan23.webp" },
+        { "url": "/src/assets/gallery/pelikan24.webp" },
+        { "url": "/src/assets/gallery/pelikan25.webp" },
+        { "url": "/src/assets/gallery/pelikan26.webp" },
+        { "url": "/src/assets/gallery/pelikan27.webp" },
+        { "url": "/src/assets/gallery/pelikan28.webp" },
+        { "url": "/src/assets/gallery/pelikan29.webp" },
+        { "url": "/src/assets/gallery/pelikan30.webp" },
+        { "url": "/src/assets/gallery/pelikan31.webp" },
+        { "url": "/src/assets/gallery/pelikan32.webp" },
+        { "url": "/src/assets/gallery/pelikan33.webp" },
+        { "url": "/src/assets/gallery/pelikan34.webp" },
+        { "url": "/src/assets/gallery/pelikan35.webp" },
+        { "url": "/src/assets/gallery/pelikan36.webp" },
+        { "url": "/src/assets/gallery/pelikan37.webp" },
+        { "url": "/src/assets/gallery/pelikan38.webp" },
+        { "url": "/src/assets/gallery/pelikan39.webp" },
+        { "url": "/src/assets/gallery/pelikan40.webp" },
+        { "url": "/src/assets/gallery/pelikan41.webp" },
+        { "url": "/src/assets/gallery/pelikan42.webp" },
+        { "url": "/src/assets/gallery/pelikan43.webp" },
+        { "url": "/src/assets/gallery/pelikan44.webp" },
+        { "url": "/src/assets/gallery/pelikan45.webp" },
+        { "url": "/src/assets/gallery/pelikan46.webp" },
+        { "url": "/src/assets/gallery/pelikan47.webp" },
+        { "url": "/src/assets/gallery/pelikan48.webp" },
+        { "url": "/src/assets/gallery/pelikan49.webp" },
+        { "url": "/src/assets/gallery/pelikan50.webp" },
+        { "url": "/src/assets/gallery/pelikan51.webp" },
+        { "url": "/src/assets/gallery/pelikan52.webp" },
+        { "url": "/src/assets/gallery/pelikan53.webp" },
+        { "url": "/src/assets/gallery/pelikan54.webp" },
+        { "url": "/src/assets/gallery/pelikan55.webp" },
+        { "url": "/src/assets/gallery/pelikan56.webp" },
+        { "url": "/src/assets/gallery/pelikan57.webp" },
+        { "url": "/src/assets/gallery/pelikan58.webp" },
+        { "url": "/src/assets/gallery/pelikan59.webp" },
+        { "url": "/src/assets/gallery/pelikan60.webp" },
+        { "url": "/src/assets/gallery/pelikan61.webp" },
+        { "url": "/src/assets/gallery/pelikan62.webp" },
+        { "url": "/src/assets/gallery/pelikan63.webp" },
+        { "url": "/src/assets/gallery/pelikan64.webp" },
+        { "url": "/src/assets/gallery/pelikan65.webp" },
+        { "url": "/src/assets/gallery/pelikan66.webp" },
+        { "url": "/src/assets/gallery/pelikan67.webp" },
+        { "url": "/src/assets/gallery/pelikan68.webp" },
+        { "url": "/src/assets/gallery/pelikan69.webp" },
+        { "url": "/src/assets/gallery/pelikan70.webp" },
+        { "url": "/src/assets/gallery/pelikan71.webp" },
+        { "url": "/src/assets/gallery/pelikan72.webp" },
+        { "url": "/src/assets/gallery/pelikan73.webp" },
+        { "url": "/src/assets/gallery/pelikan74.webp" },
+        { "url": "/src/assets/gallery/pelikan75.webp" },
+        { "url": "/src/assets/gallery/pelikan76.webp" },
+        { "url": "/src/assets/gallery/pelikan77.webp" },
+        { "url": "/src/assets/gallery/pelikan78.webp" },
+        { "url": "/src/assets/gallery/pelikan79.webp" },
+        { "url": "/src/assets/gallery/pelikan80.webp" },
+        { "url": "/src/assets/gallery/pelikan81.webp" },
+        { "url": "/src/assets/gallery/pelikan82.webp" },
+        { "url": "/src/assets/gallery/pelikan83.webp" }
+      ]
+    },
+    {
+      "id": "tab4",
+      "galleryproduct": "EnglishNotebook",
+      "images": [
+        {
+          "url": "/src/assets/gallery/eng1.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng2.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng3.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng4.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng5.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng6.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng7.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng8.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng9.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng10.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng11.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng12.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng13.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng14.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng15.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng16.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng17.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng18.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng19.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng20.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng21.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng22.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng23.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng24.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng25.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng26.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng27.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng28.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng29.webp"
+        },
+        {
+          "url": "/src/assets/gallery/eng30.webp"
+        }
+      ]
+    },
+    {
+      "id": "tab5",
+      "galleryproduct": "Art & Craft",
+      "images": [
+        { "url": "/src/assets/gallery/art1.webp" },
+        { "url": "/src/assets/gallery/art2.webp" },
+        { "url": "/src/assets/gallery/art3.webp" },
+        { "url": "/src/assets/gallery/art4.webp" },
+        { "url": "/src/assets/gallery/art5.webp" },
+        { "url": "/src/assets/gallery/art6.webp" },
+        { "url": "/src/assets/gallery/art7.webp" },
+        { "url": "/src/assets/gallery/art8.webp" },
+        { "url": "/src/assets/gallery/art9.webp" },
+        { "url": "/src/assets/gallery/art10.webp" },
+        { "url": "/src/assets/gallery/art11.webp" },
+        { "url": "/src/assets/gallery/art12.webp" },
+        { "url": "/src/assets/gallery/art13.webp" },
+        { "url": "/src/assets/gallery/art14.webp" },
+        { "url": "/src/assets/gallery/art15.webp" },
+        { "url": "/src/assets/gallery/art16.webp" },
+        { "url": "/src/assets/gallery/art17.webp" },
+        { "url": "/src/assets/gallery/art18.webp" },
+        { "url": "/src/assets/gallery/art19.webp" },
+        { "url": "/src/assets/gallery/art20.webp" },
+        { "url": "/src/assets/gallery/art21.webp" },
+        { "url": "/src/assets/gallery/art22.webp" },
+        { "url": "/src/assets/gallery/art23.webp" },
+        { "url": "/src/assets/gallery/art24.webp" },
+        { "url": "/src/assets/gallery/art25.webp" },
+        { "url": "/src/assets/gallery/art26.webp" },
+        { "url": "/src/assets/gallery/art27.webp" },
+        { "url": "/src/assets/gallery/art28.webp" },
+        { "url": "/src/assets/gallery/art29.webp" },
+        { "url": "/src/assets/gallery/art30.webp" },
+        { "url": "/src/assets/gallery/art31.webp" },
+        { "url": "/src/assets/gallery/art32.webp" },
+        { "url": "/src/assets/gallery/art33.webp" },
+        { "url": "/src/assets/gallery/art34.webp" },
+        { "url": "/src/assets/gallery/art35.webp" },
+        { "url": "/src/assets/gallery/art36.webp" },
+        { "url": "/src/assets/gallery/art37.webp" },
+        { "url": "/src/assets/gallery/art38.webp" },
+        { "url": "/src/assets/gallery/art39.webp" },
+        { "url": "/src/assets/gallery/art40.webp" },
+        { "url": "/src/assets/gallery/art41.webp" },
+        { "url": "/src/assets/gallery/art42.webp" },
+        { "url": "/src/assets/gallery/art43.webp" },
+        { "url": "/src/assets/gallery/art44.webp" },
+        { "url": "/src/assets/gallery/art45.webp" },
+        { "url": "/src/assets/gallery/art46.webp" }
+      ]
+    }
+  ]
+}

@@ -12,13 +12,14 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
+    rules: {
+      // Images are pre-optimised into responsive webp variants (see scripts/build-data.mjs)
+      // and served through <ProductImage>, so next/image is not used with static export.
+      "@next/next/no-img-element": "off",
+    },
+  },
+  {
+    ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts", "scripts/**"],
   },
 ];
 

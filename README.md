@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BnB Group — website revamp
 
-## Getting Started
+Next.js 15 (App Router, static export) · TypeScript · Tailwind CSS v4 · GSAP + ScrollTrigger + SplitText · Framer Motion · React Three Fiber · Lenis.
 
-First, run the development server:
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev            # http://localhost:3000 (dev mode is slow for the 3D scenes; judge performance on a build)
+npm run build          # static export → out/
+node scripts/serve-out.mjs out 3300   # preview the export; also stubs the mail endpoint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`out/` is plain static files. Upload it to the existing nginx host **next to the existing `/mailserver/server.php`** —
+the contact form posts the same urlencoded fields as the current site (`name, company, email, number, message`).
+URLs are unchanged (`/aboutus/`, `/brand/`, `/gallery/`, `/contact-us/`, `/privacy-policy/`); `trailingSlash` emits
+`<route>/index.html`, which works with a standard `try_files $uri $uri/ =404;`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Content provenance
 
-## Learn More
+All copy, product photos, logos and brand descriptions come from the current bnbgroup.org:
 
-To learn more about Next.js, take a look at the following resources:
+- `scripts/fetch-assets.mjs` mirrors the original assets into `public/`.
+- `scripts/build-data.mjs` generates responsive webp variants (`public/gallery/w480|w960`), image dimensions, placeholder
+  colours, and `src/data/gallery.generated.ts` (471 products). Art & Craft product names were transcribed from the
+  names printed on the photos; other products have no published names and are labelled “Collection — No. n”.
+- 3D notebooks are wrapped in real BnB notebook cover photos (`public/textures`). Pens, pencils etc. are generic
+  procedural models — no product GLB models exist.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app` — routes (home, aboutus, brand, gallery, contact-us, privacy-policy, 404, sitemap, robots)
+- `src/components/home` — hero, intro, pinned 3D showcase, collections, featured rail, why-BnB, brand story, marquee, CTA
+- `src/components/three` — stationery models, hero scene, scroll-driven showcase scene, studio lighting
+- `src/data` — site copy, brands, collections, generated gallery & privacy text
 
-## Deploy on Vercel
+## Accessibility & performance notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `prefers-reduced-motion`: no WebGL, no smooth scrolling, static photo showcase, transforms disabled.
+- No WebGL / data-saver: photo fallbacks. 3D is code-split and only mounted near the viewport; render loops pause off-screen.
+- Fonts are self-hosted (no build-time network).
