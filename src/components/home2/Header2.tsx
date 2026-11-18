@@ -92,8 +92,8 @@ export function Header2() {
 
             {/* brand */}
             <Link href="/home-2/" aria-label="BnB Group — home" className="group relative z-[60] flex items-center gap-2.5">
-              <span className="grid size-10 place-items-center rounded-full bg-coral shadow-[0_10px_22px_-10px_rgb(255_90_50/.8)] transition-transform duration-700 ease-out-expo group-hover:rotate-[200deg]">
-                <img src="/brand-assets/logo-80.png" alt="" width={40} height={40} className="w-1/2" />
+              <span className="grid size-10 place-items-center transition-transform duration-700 ease-out-expo group-hover:rotate-[200deg]">
+                <img src="/brand-assets/logo-80.png" alt="" width={40} height={40} className="size-8 object-contain" />
               </span>
               <span className="leading-none">
                 <span className="block text-[1.05rem] font-semibold tracking-[-0.03em]">BnB Group</span>

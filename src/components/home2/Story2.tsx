@@ -10,6 +10,14 @@ import { Frame, Kicker, PALETTE_HEX } from "./ui";
 const STATEMENT =
   "BnB Group is a leading distributor of school and office stationery in Saudi Arabia, headquartered in Riyadh since 2006 with branches in Dammam, Jeddah and Khamis Mushayth.";
 
+/** Each fact sits in its own palette block; the shapes echo the header's sticker set. */
+const FACTS = [
+  { big: "2006", small: "founded in Riyadh", c: 4, r: "1.25rem" },
+  { big: "4", small: "cities across KSA", c: 0, r: "999px" },
+  { big: `${BRANDS.length}`, small: "brands distributed", c: 2, r: "999px 999px 1.25rem 1.25rem" },
+  { big: `${new Date().getFullYear() - 2006}+`, small: "years in the trade", c: 3, r: "1.25rem 999px 1.25rem 999px" },
+];
+
 export function Statement2() {
   const root = useRef<HTMLElement>(null);
   useGSAP(
@@ -25,12 +33,16 @@ export function Statement2() {
           scrollTrigger: { trigger: ".st-text", start: "top 80%", end: "bottom 45%", scrub: true },
         },
       );
-      gsap.to(".st-shape", {
-        y: (i: number) => -60 - i * 35,
-        rotation: (i: number) => (i % 2 ? 40 : -40),
-        ease: "none",
-        scrollTrigger: { trigger: root.current, start: "top bottom", end: "bottom top", scrub: true },
+      // fact cards rise up from below with a fade, one after another, then keep floating forever
+      const tl = gsap.timeline({
+        scrollTrigger: { trigger: ".st-shelf", start: "top 85%", toggleActions: "play none none reverse" },
       });
+      tl.from(".st-block", { y: 140, autoAlpha: 0, duration: 1.1, ease: "power3.out", stagger: 0.15 })
+        .from(".st-line", { scaleX: 0, autoAlpha: 0, transformOrigin: "center", duration: 0.9, ease: "power2.out" }, 0.2)
+        .from(".st-fact", { autoAlpha: 0, y: 16, duration: 0.6, ease: "power2.out", stagger: 0.1 }, 0.5);
+
+      // endless gentle bob on an inner wrapper; all cards move together so the row stays level and straight
+      gsap.to(".st-float", { y: -12, duration: 2.6, ease: "sine.inOut", repeat: -1, yoyo: true });
     },
     { scope: root },
   );
@@ -52,23 +64,22 @@ export function Statement2() {
           <p className="mt-10 max-w-xl text-lead text-ink-soft lg:ml-auto">{COPY.strength}</p>
         </div>
       </div>
-      {/* drifting blocks */}
-      <div aria-hidden className="pointer-events-none relative mx-auto mt-16 h-40 max-w-3xl">
-        {[
-          { l: "18%", t: "30%", s: 64, r: "0", c: 4 },
-          { l: "34%", t: "0%", s: 84, r: "50%", c: 2 },
-          { l: "48%", t: "40%", s: 110, r: "50%", c: 3, logo: true },
-          { l: "64%", t: "8%", s: 70, r: "0 50% 0 50%", c: 1 },
-          { l: "78%", t: "45%", s: 56, r: "0", c: 0 },
-        ].map((b, i) => (
-          <div
-            key={i}
-            className="st-shape absolute grid place-items-center shadow-[0_20px_40px_-20px_rgb(18_21_77/.4)]"
-            style={{ left: b.l, top: b.t, width: b.s, height: b.s, borderRadius: b.r, background: PALETTE_HEX[b.c] }}
-          >
-            {b.logo && <img src="/brand-assets/logo-80.png" alt="" className="w-1/2" />}
-          </div>
-        ))}
+      {/* fact blocks: a scattered pile that stacks itself neatly on a shelf as you scroll */}
+      <div className="st-shelf container-x mt-20 lg:mt-28">
+        <ul className="st-deck relative grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 lg:grid-cols-4 lg:gap-8">
+          {FACTS.map((f) => (
+            <li key={f.small} className="st-block">
+              <div
+                className="st-float flex aspect-square flex-col items-center justify-center p-4 text-center text-ink shadow-[0_24px_40px_-24px_rgb(18_21_77/.45)]"
+                style={{ borderRadius: f.r, background: PALETTE_HEX[f.c] }}
+              >
+                <span className="st-fact block text-[clamp(2.2rem,5vw,4rem)] leading-none font-semibold tracking-[-0.05em]">{f.big}</span>
+                <span className="st-fact mt-2 block font-serif text-sm italic text-ink-soft lg:text-base">{f.small}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div aria-hidden className="st-line mt-6 h-px w-full bg-ink/25" />
       </div>
     </section>
   );

@@ -86,15 +86,6 @@ function Mosaic() {
           </div>
         );
       })}
-      {/* brand mark sits in the middle of the mosaic */}
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 160, damping: 14, delay: 1.1 }}
-        className="absolute top-1/2 left-1/2 grid aspect-square w-[calc(100%/6)] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-coral shadow-[0_18px_40px_-14px_rgb(255_90_50/.7)] lg:w-[calc(100%/12)]"
-      >
-        <img src="/brand-assets/logo-80.png" alt="" className="w-1/2 animate-[spin_14s_linear_infinite]" />
-      </motion.div>
     </div>
   );
 }

@@ -9,29 +9,6 @@ import { cn } from "@/lib/cn";
 import { useFitText } from "@/hooks/useFitText";
 import { PALETTE_HEX } from "./ui";
 
-/** Dotted sky field behind the footer card. */
-export const DOT_FIELD = {
-  backgroundImage:
-    "radial-gradient(circle at 1px 1px, rgb(255 255 255 / .9) 1.2px, transparent 1.4px), radial-gradient(circle at 1px 1px, rgb(169 195 166 / .8) 1.2px, transparent 1.4px)",
-  backgroundSize: "9px 9px, 23px 23px",
-};
-
-/* A strip of blocks in the home-2 shape language. */
-const STRIP = [
-  { r: "0", c: 0 },
-  { r: "50%", c: 2 },
-  { r: "50% 50% 0 0", c: 3 },
-  { r: "0 50% 0 50%", c: 1 },
-  { r: "100% 0 0 0", c: 4 },
-  { r: "50%", c: 0 },
-  { r: "0", c: 3 },
-  { r: "50% 50% 0 0", c: 1 },
-  { r: "0 50% 0 50%", c: 2 },
-  { r: "50%", c: 4 },
-  { r: "100% 0 0 0", c: 0 },
-  { r: "0", c: 2 },
-];
-
 function Col({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
@@ -50,14 +27,6 @@ export function Footer2() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) return;
-      gsap.from(".f2-block", {
-        scale: 0,
-        rotation: () => gsap.utils.random(-60, 60),
-        stagger: { each: 0.04, from: "random" },
-        duration: 0.8,
-        ease: "back.out(1.8)",
-        scrollTrigger: { trigger: ".f2-strip", start: "top 95%", once: true },
-      });
       gsap.from(".f2-word > span", {
         yPercent: 100,
         stagger: 0.04,
@@ -73,7 +42,6 @@ export function Footer2() {
 
   return (
     <footer ref={ref} className="relative overflow-hidden bg-sky pt-10 pb-4 lg:pt-16 lg:pb-6">
-      <div aria-hidden className="absolute inset-0 opacity-70" style={DOT_FIELD} />
 
       <div className="container-x relative">
         <div className="relative rounded-[1.6rem] bg-card px-6 pt-12 pb-6 shadow-2xl lg:px-12 lg:pt-16">
@@ -153,22 +121,20 @@ export function Footer2() {
             </nav>
           </div>
 
-          {/* wordmark + block strip */}
-          <div className="mt-16 flex flex-col items-center gap-6 lg:mt-20">
+          {/* wordmark */}
+          <div className="mt-16 flex flex-col items-center lg:mt-20">
             <div
               ref={word}
               aria-hidden
-              className="f2-word flex w-full min-w-0 justify-center overflow-hidden whitespace-nowrap text-[clamp(3.5rem,12vw,11.5rem)] leading-[0.9] font-semibold tracking-[-0.06em] select-none"
+              // same sky blue as the footer behind the card, so the letters read as cut out of it
+              // bleeds through the card's side padding so the word spans the card edge to edge
+              className="f2-word -mx-6 flex min-w-0 self-stretch justify-center overflow-hidden whitespace-nowrap text-[clamp(3.5rem,12vw,11.5rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-sky select-none lg:-mx-12"
             >
               {"BnB Group".split("").map((ch, i) => (
-                <span key={i} className={ch === " " ? "w-[0.22em]" : "pt-[0.04em] pr-[0.06em] -mr-[0.06em] pb-[0.16em]"}>
+                // equal padding both sides keeps the fitted word optically centred
+                <span key={i} className={ch === " " ? "w-[0.22em]" : "-mx-[0.03em] px-[0.03em] pt-[0.04em] pb-[0.16em]"}>
                   {ch === " " ? " " : ch}
                 </span>
-              ))}
-            </div>
-            <div aria-hidden className="f2-strip grid w-full max-w-sm grid-cols-6 gap-1 lg:mb-3">
-              {STRIP.map((b, i) => (
-                <span key={i} className="f2-block aspect-square" style={{ borderRadius: b.r, background: PALETTE_HEX[b.c] }} />
               ))}
             </div>
           </div>
